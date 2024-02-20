@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jrsb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0037-tenant/tkrw-pr714-0075-0037-app/devfile-sample-jrsb@sha256:785b61bdad16bfcfa2dd4b91d1c38246cd2536609bb96827f754e03a52a77c17
+        name: my-nodejs
+        resources: {}
+status: {}
